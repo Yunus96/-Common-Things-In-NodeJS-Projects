@@ -10,6 +10,9 @@ const app = express();
 //sets template engine
 app.set('view engine', 'ejs')
 
+//Lets our server to accept json
+app.use(express.json())
+
 //tells to use static files
 app.use(express.static('public'))
 
